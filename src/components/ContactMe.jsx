@@ -33,6 +33,9 @@ export default function ContactMe() {
               color: "#fff",
             },
           });
+          data.email.value="";
+          data.name.value="";
+          data.message.value="";
         },
         (error) => {
           toast.error("FAILED TO SEND EMAIL", error.text);
