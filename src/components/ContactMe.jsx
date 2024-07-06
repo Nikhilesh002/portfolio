@@ -8,39 +8,42 @@ export default function ContactMe() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const data=e.target;
+    const data = e.target;
 
-    if(data.email.value==="" || data.name.value==="" || data.message.value===""){
+    if (
+      data.email.value === "" ||
+      data.name.value === "" ||
+      data.message.value === ""
+    ) {
       toast.error("Fill all inputs");
-    }
-    else{
+    } else {
       emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        }
-      )
-      .then(
-        () => {
-          toast("Message Sent!!", {
-            icon: "✅",
-            style: {
-              borderRadius: "5px",
-              background: "#333",
-              color: "#fff",
-            },
-          });
-          data.email.value="";
-          data.name.value="";
-          data.message.value="";
-        },
-        (error) => {
-          toast.error("FAILED TO SEND EMAIL", error.text);
-        }
-      );
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          form.current,
+          {
+            publicKey: import.meta.env.VITE_PUBLIC_KEY,
+          }
+        )
+        .then(
+          () => {
+            toast("Message Sent!!", {
+              icon: "✅",
+              style: {
+                borderRadius: "5px",
+                background: "#333",
+                color: "#fff",
+              },
+            });
+            data.email.value = "";
+            data.name.value = "";
+            data.message.value = "";
+          },
+          (error) => {
+            toast.error("FAILED TO SEND EMAIL", error.text);
+          }
+        );
     }
   };
 
@@ -65,16 +68,7 @@ export default function ContactMe() {
               <h2 className="title-font mb-1 text-pink-300 text-3xl font-bold">
                 Let&apos;s work together
               </h2>
-              <p className="text-sm text-slate-300">
-                Or mail me at{" "}
-                <a
-                  className="underline"
-                  target="__blank"
-                  href="mailto:nikhileshg02@gmail.com"
-                >
-                  nikhileshg02@gmail.com
-                </a>
-              </p>
+
               <div className="mb-4">
                 <label htmlFor="name" className="text-sm leading-7">
                   Name
@@ -115,6 +109,16 @@ export default function ContactMe() {
                 Send
               </button>
             </form>
+            <p className="text-sm text-slate-400">
+              Or mail me at{" "}
+              <a
+                className="underline"
+                target="__blank"
+                href="mailto:nikhileshg02@gmail.com"
+              >
+                nikhileshg02@gmail.com
+              </a>
+            </p>
           </div>
         </div>
       </motion.div>
