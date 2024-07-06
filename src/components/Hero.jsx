@@ -21,11 +21,11 @@ function Hero() {
                 sequence={[
                   500,
                   "I'm G Sai Nikhilesh", // initially rendered starting point
-                  1000,
+                  1500,
                   "I'm a Full Stack Developer",
-                  500,
+                  800,
                 ]}
-                speed={50}
+                speed={20}
                 style={{ fontSize: "1.68em" }}
                 repeat={Infinity}
               />

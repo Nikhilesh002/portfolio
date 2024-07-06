@@ -48,12 +48,12 @@ export default function ContactMe() {
         whileInView={{ x: 0, opacity: 1 }}
         initial={{ x: -100, opacity: 0.3 }}
         transition={{ duration: 0.5, delay: 0.18 }}
-        className="max-w-xl mx-auto mt-16 p-8 rounded-lg font-mono"
+        className="max-w-xl mx-auto mt-16 lg:p-8 rounded-lg font-mono"
       >
         <div className="relative p-[4px] group rounded-lg">
           <div className="absolute inset-0 z-[1] rounded-lg opacity-60 group-hover:opacity-100 blur-xl transition duration-500 will-change-transform bg-[radial-gradient(circle_farthest-side_at_0_100%,#f472b6,transparent),radial-gradient(circle_farthest-side_at_100%_0,#64748b,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#8b5cf6,transparent),radial-gradient(circle_farthest-side_at_0_0,#d1d5db,#141316)]"></div>
           <div className="absolute inset-0 z-[1] rounded-lg will-change-transform bg-[radial-gradient(circle_farthest-side_at_0_100%,#f472b6,transparent),radial-gradient(circle_farthest-side_at_100%_0,#64748b,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#8b5cf6,transparent),radial-gradient(circle_farthest-side_at_0_0,#d1d5db,#141316)]"></div>
-          <div className="relative z-[5] bg-slate-800 p-8 rounded-lg">
+          <div className="relative z-[5] bg-slate-800 p-5 sm:p-8 rounded-lg">
             <form
               ref={form}
               onSubmit={sendEmail}
