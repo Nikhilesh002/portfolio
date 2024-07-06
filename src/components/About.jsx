@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants/static_data";
-import { motion } from "framer-motion"
+import {SOCIAL} from "../constants/static_data";
 
 function About() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pt-1 pb-4">
       <h2 className="my-20 text-center text-4xl">
         About<span className="text-neutral-500"> Me</span>
       </h2>
@@ -22,8 +23,19 @@ function About() {
           whileInView={{ x: 0, opacity: 1 }}
           initial={{ x: 100, opacity: 0 }}
           transition={{ duration: 0.5, delay:0.15}}
-          className="w-full lg:w-1/2">
-          <div className="flex justify-center lg:justify-start">
+          className="w-full lg:w-1/2 lg:p-8">
+          <div className="p-2 flex flex-col items-center justify-center lg:justify-start">
+            <div className="flex px-20 ">
+              {
+                SOCIAL.map((website,index)=>(
+                  <a className="inline" target="__blank" key={index} href={website.link}>
+                    <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                      {website.name}
+                    </button>
+                  </a>
+                ))
+              }
+            </div>
             <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
           </div>
         </motion.div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 function Projects() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pt-1 pb-4">
       <motion.h2
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -30, opacity: 0.2 }}
@@ -19,8 +19,8 @@ function Projects() {
               className="w-full lg:w-1/4">
               <img
                 src={project.image}
-                width={150}
-                height={150}
+                width={230}
+                height={230}
                 alt={project.title}
                 className="mb-6 rounded"
               />

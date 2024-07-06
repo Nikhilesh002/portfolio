@@ -3,23 +3,25 @@ import { DiJavascript } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandCpp } from "react-icons/tb";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
 
-const iconAnimation=()=>{
-  let randomNo=(Math.random()%2)+1;
-  randomNo+=Math.random()/10;
-  const duration=(randomNo>=1)?randomNo:randomNo+1;
+const iconAnimation = () => {
+  let randomNo = Math.random();
+  const duration = 1.0754296 + randomNo * 2;
   return {
-  initial:{y:-10+randomNo},
-  animate:{
-    y:[10,-10],
-    transition:{
-      duration:(duration),
-      ease:"linear",
-      repeat:Infinity,
-      repeatType:"reverse"
+    initial: { y: -7 + randomNo },
+    animate: {
+      y: [10, -10],
+      transition: {
+        duration: duration,
+        ease: "linear",
+        repeat: Infinity,
+        repeatType: "reverse"
+      }
     }
-  }
-}}
+  };
+};
 
 function Technologies() {
   return (
@@ -46,6 +48,13 @@ function Technologies() {
           animate="animate"
           initial="initial"
           className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiMongodb className="text-7xl text-green-500" />
+        </motion.div>
+        <motion.div
+          variants={iconAnimation()}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
           <TbBrandCpp className="text-7xl text-sky-700" />
         </motion.div>
         <motion.div
@@ -61,6 +70,13 @@ function Technologies() {
           initial="initial"
           className="rounded-2xl border-4 border-neutral-800 p-4">
           <DiJavascript className="text-7xl text-yellow-400" />
+        </motion.div>
+        <motion.div
+          variants={iconAnimation()}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <RiTailwindCssFill className="text-7xl text-cyan-400" />
         </motion.div>
       </motion.div>
     </div>

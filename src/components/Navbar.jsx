@@ -9,9 +9,9 @@ function Navbar() {
   };
 
   return (
-    <nav className="text-white mb-2">
+    <nav className="text-white border-b border-neutral-800 mb-2">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span className="self-center text-2xl font-semibold whitespace-nowrap">Sai Nikhilesh</span>
+        <span className="self-center text-2xl font-medium whitespace-nowrap">Sai Nikhilesh</span>
 
         <button
           onClick={toggleMenu}
