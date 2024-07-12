@@ -3,6 +3,8 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 // import project5 from "../assets/projects/project-4.png";
+import githubImg from '../assets/social/github.svg';
+import linkedinImg from '../assets/social/linkedin.svg';
 
 export const HERO_CONTENT = `I am a dedicated full stack developer with a passion for creating efficient and user-friendly web applications. I specialize in front-end technologies React and Next.js and have solid experience with back-end technologies Node.js and MongoDB. I enjoy solving complex problems and continually learning new technologies. My aim is to build innovative solutions that enhance user experiences and contribute to business success.`;
 
@@ -21,10 +23,14 @@ export const EXPERIENCES = [
 export const SOCIAL=[
   {
     name:"GitHub",
+    img:githubImg,
+    styles:"bg-white rounded p-0.5 ",
     link:"https://github.com/Nikhilesh002"
   },
   {
     name:"LinkedIn",
+    img:linkedinImg,
+    styles:"bg-white rounded",
     link:"https://www.linkedin.com/in/nikhilesh002/"
   },
 ]

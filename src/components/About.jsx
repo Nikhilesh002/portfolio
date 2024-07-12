@@ -25,13 +25,11 @@ function About() {
           transition={{ duration: 0.5, delay:0.15}}
           className="w-full lg:w-1/2 lg:p-8">
           <div className="p-2 flex flex-col items-center justify-center lg:justify-start">
-            <div className="flex px-20 ">
+            <div className="flex px-20 gap-3 ">
               {
                 SOCIAL.map((website,index)=>(
                   <a className="inline" target="__blank" key={index} href={website.link}>
-                    <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                      {website.name}
-                    </button>
+                    <img className={`${website.styles} w-10 `} src={website.img} alt="logo" />
                   </a>
                 ))
               }
