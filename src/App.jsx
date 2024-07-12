@@ -17,9 +17,9 @@ function App() {
         <Navbar />
         <div className="pt-20"></div>
         <div className="px-8">
-          <Element name="hero">
+          {/* <Element name="hero"> */}
             <Hero />
-          </Element>
+          {/* </Element> */}
           <Element name="about">
             <About />
           </Element>
