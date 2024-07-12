@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 export default function ContactMe() {
   const form = useRef();
   const [isVerified,setisVerified]=useState(false);
-  const [isLoading,setisLoading]=useState(true);
+  const [isLoading,setisLoading]=useState(false);
 
   function verify(value){
     setisVerified(true);
