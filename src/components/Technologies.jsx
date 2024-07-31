@@ -5,6 +5,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandCpp } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 
 const iconAnimation = () => {
   let randomNo = Math.random();
@@ -36,6 +37,13 @@ function Technologies() {
         initial={{ x: -100, opacity: 0.3 }}
         transition={{ duration: 1,delay:0.2}}
         className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div
+          variants={iconAnimation()}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+          <RiNextjsFill className="text-7xl text-black bg-white rounded-full p-0" />
+        </motion.div>
         <motion.div
           variants={iconAnimation()}
           animate="animate"

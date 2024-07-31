@@ -2,7 +2,8 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
-// import project5 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 import githubImg from '../assets/social/github.svg';
 import linkedinImg from '../assets/social/linkedin.svg';
 
@@ -46,22 +47,22 @@ export const PROJECTS = [
     technologies: ["JavaScript", "Tailwind CSS", "ReactJS", "NodeJS", "MongoDB"],
   },
   {
+    title: "Get Me A Chai",
+    image: project5,
+    deployment:"https://get-me-a-chai-nik.vercel.app/",
+    github:"https://github.com/Nikhilesh002/get-me-a-chai",
+    description:
+      "Discover and support your favorite creators on our platform, similar to Patreon. Donate directly to creators and help them thrive. Creators can easily view and receive donations.",
+    technologies: ["NextJS","JavaScript", "Tailwind CSS", "MongoDB","NextAuth","Razorpay"],
+  },
+  {
     title: "BlogWiz",
     image: project2,
     deployment:"https://blogwiz.onrender.com/",
     github:"https://github.com/Nikhilesh002/Blogwiz",
     description:
-      "A blogging website allowing users to post, update, view, and delete blogs.",
+      "Create and share your stories on our blogging platform, where authors can post, update, view, and delete blogs. Authors can express themselves through their writings, while users enjoy reading diverse content.",
     technologies: ["JavaScript", "Tailwind CSS", "ReactJS", "MongoDB", "NodeJS"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project4,
-    deployment:"https://nikhilesh002-portfolio.vercel.app/",
-    github:"https://github.com/Nikhilesh002/portfolio",
-    description:
-      "A personal portfolio website showcasing my information, projects, and skills. The website features smooth animations powered by Framer Motion and includes a contact form for connecting with me via email.",
-    technologies: ["JavaScript", "Tailwind CSS", "ReactJS","Framer Motion","EmailJS"],
   },
   {
     title: "Musically",
@@ -71,6 +72,24 @@ export const PROJECTS = [
     description:
       "A responsive music edtech website showcasing course listings, instructors, and student feedback.",
     technologies: ["ReactJS", "NextJS", "AceternityUI", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Money Tracker App",
+    image: project6,
+    deployment:"https://money-tracker-nik.vercel.app/",
+    github:"https://github.com/Nikhilesh002/money-tracker-app",
+    description:
+      "Manage your finances effortlessly with our responsive transaction manager. Add, edit, remove, and filter transactions, and visualize your transactions with pie charts. Enjoy a user-friendly experience with both light and dark modes.",
+    technologies: ["ReactJS", "JavaScript", "Tailwind CSS","ReduxJS","Chart.js"],
+  },
+  {
+    title: "Portfolio Website",
+    image: project4,
+    deployment:"https://nikhilesh002-portfolio.vercel.app/",
+    github:"https://github.com/Nikhilesh002/portfolio",
+    description:
+      "A personal portfolio website showcasing my information, projects, and skills. The website features smooth animations powered by Framer Motion and includes a contact form for connecting with me via email.",
+    technologies: ["JavaScript", "Tailwind CSS", "ReactJS","Framer Motion","EmailJS"],
   },
   // {
   //   title: "House Rental System",

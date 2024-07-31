@@ -109,7 +109,9 @@ export default function ContactMe() {
                   className="h-32 w-full resize-none rounded border border-slate-500 bg-slate-700 py-1 px-3 text-base leading-6 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
                 ></textarea>
               </div>
-              <ReCAPTCHA sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} onChange={verify} />
+              <div className="flex justify-center ">
+                <ReCAPTCHA sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} onChange={verify} />
+              </div>
               <button
                 type="submit"
                 className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none font-semibold hover:text-gray-200 focus:ring-purple-200 dark:focus:ring-purple-800  rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 mt-4"
